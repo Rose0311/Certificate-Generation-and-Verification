@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Generate Certificate{% endblock %}
+{% block content %}
+<h2>Generate Certificate</h2>
+
+<form action="/generate" method="post">
+  <label for="name">Name:</label>
+<input type="text" id="name" name="name" required><br><br>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required class="hee"><br><br>
+
+  <label for="course">Course Completed:</label>
+  <input type="text" id="course" name="course" required><br><br>
+
+  <label for="issued">Issued by:</label>
+  <input type="text" id="issued" name="issued" required><br><br>
+
+  <label for="completion_date">Date completed:</label>
+  <input type="date" id="completion_date" name="completion_date" required class="hee"><br><br>
+
+  <button type="submit" class="hee">Generate Certificate</button>
+  
+
+  
+</form>
+<button onclick="window.location.href='/verify'">Verify Certificate</button>
+{% endblock %}

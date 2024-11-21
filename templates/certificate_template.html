@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        .certificate-box {
+            border: 2px solid #000;
+            padding: 50px;
+            margin: 50px;
+        }
+        .certificate-header {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .certificate-info {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        .certificate-footer {
+            margin-top: 50px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="certificate-box">
+        <div class="certificate-header">Certificate of Completion</div>
+        <div class="certificate-info">
+            <p><strong>Name:</strong> {{ name }}</p>
+            <p><strong>Email:</strong> {{ email }}</p>
+            <p><strong>Course:</strong> {{ course }}</p>
+            
+            <p><strong>Completion Date:</strong> {{ completion_date }}</p>
+            <p><strong>Certificate ID:</strong> {{ certificate_id }}</p>
+        </div>
+        <div class="certificate-footer">
+            <p>Issued By: {{ issued_by }}</p>
+            
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Verify Certificate{% endblock %}
+{% block content %}
+<div class="res">
+<h2>Result</h2>
+
+{% if error %}
+    <h1 style="color:red;">{{ error }}</h1>
+{% else %}
+    <h1>Certificate Verified</h1>
+    <p>Certificate ID: {{ certificate.certificate_id }}</p>
+    <p>Name: {{ certificate.name }}</p>
+    <p>Course: {{ certificate.course }}</p>
+    <p>Email: {{ certificate.email }}</p>
+    <p>Issued by: {{ certificate.issued_by }}</p>
+    <p>Completion date: {{ certificate.completion_date }}</p>
+{% endif %}
+</div>
+
+{% endblock %}
